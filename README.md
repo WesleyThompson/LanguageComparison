@@ -1,8 +1,10 @@
-# LanguageComparison
-c++ and java
-Language purpose/genesis
-Why was the language created?
-Java
+### Comparison of C++ and Java
+#### Team Members: Wesley Thompson
+
+##### Language purpose/genesis
+
++ Why was the language created?
+  + Java
 Needed an architecture-neutral language for developing on multiple different embedded electronics or on the World-Wide Web.
 C++
 Needed the performance of C but the easier large-scale development that classes in Simula provided.
