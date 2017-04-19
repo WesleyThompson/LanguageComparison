@@ -228,24 +228,26 @@
 * Comparisons of references and values
   * How are values compared? (i.e. comparing two strings)
     * Java
-      * 
+      * ` new String("test").equals("test") `
     * C++
-      * 
+      * ``` std::string string = "blah"
+          if(string == "bleh") { . . . } ```
 * Null/nil references
   * Which does the language use? (null/nil/etc)
     * Java
-      * 
+      * null
     * C++
+      * NULL
   * Does the language have features for handling null/nil references?
     * Java
-      * 
+      * [null ignore invocation](http://blog.joda.org/2007/01/java-7-null-ignore-invocation_9576.html)
     * C++
-      * 
+      * Nope manually check
 * Errors and exception handling
     * Java
-      * 
+      * try catch throw etc
     * C++
-      * 
+      * try catch throw etc
 * Lambda expressions, closures, or functions as types
     * Java
       * 
@@ -259,38 +261,39 @@
 * Singleton
   * How is a singleton implemented?
     * Java
-      * 
+      * [implementation](http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples)
     * C++
-      * 
+      * [implementation](http://www.cplusplus.com/forum/general/43943/)
   * Can it be made thread-safe?
     * Java
-      * 
+      * yes
     * C++
-      * 
+      * yes
   * Can the singleton instance be lazily instantiated?
     * Java
-      * 
+      * [Yes](http://www.javapractices.com/topic/TopicAction.do?Id=34)
     * C++
+      * [Yep](https://www.devarticles.com/c/a/Cplusplus/C-plus-plus-In-Theory-The-Singleton-Pattern-Part-I/4/)
 * Procedural programming
   * Does the language support procedural programming?
     * Java
-      * 
+      * Yes
     * C++
-      * 
+      * yes
 * Functional programming
   * Does the language support functional programming?
     * Java
-      * 
+      * [Yep](http://www.functionaljava.org/)
     * C++
-      * 
+      * [Yep](http://blog.madhukaraphatak.com/functional-programming-in-c++/)
 * Multithreading
   * Threads or thread-like abilities
     * Java
-      * 
+      * https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html
     * C++
-      * 
+      * http://www.cplusplus.com/reference/thread/thread/
   * How is multitasking accomplished?
     * Java
-      * 
+      * Don't understand the question
     * C++
-      * 
+      * Don't understand the question
