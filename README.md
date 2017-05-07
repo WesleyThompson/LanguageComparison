@@ -4,22 +4,22 @@
 * Language purpose/genesis
   * Why was the language created?
     * Java
-      * Needed an architecture-neutral language for developing on multiple different embedded electronics or on the World-Wide Web.
+      * Needed an architecture-neutral language for developing on multiple different embedded electronics or on the World-Wide Web. [Source](http://www.oracle.com/technetwork/java/javase/overview/javahistory-index-198355.html)
       
     * C++
-      * Needed the performance of C but the easier large-scale development that classes in Simula provided.
+      * Needed the performance of C but the easier large-scale development that classes / Object-oriented in Simula provided. [Source](http://www.cplusplus.com/info/history/)
       
   * What problems was the language trying to address?
     * Java
-      * Supporting multiple platforms requires compiling a different version for each platform. Sometimes supporting different platforms requires major rewrites.
+      * Supporting multiple platforms requires compiling a different version for each platform. Sometimes supporting different platforms requires major rewrites. Java instead allows "Write once, Run anywhere".
 
     * C++
-      * Developing large scale software is difficult in low-level languages and many class oriented solutions at the time were too slow.
+      * Simula 67's new (at the time) Object Oriented paradigm was very useful for software development, but it was much slower than C and other low level solutions. C++ looked to combine the Object-Orientation of Simula with the speed and capability of C.
 
   * Is the language a reaction to a previous language or a replacement for another language?
     * Java
-      * Reaction to Objective-C
-      * Sought to replace C++
+      * Reaction to Objective-C, C/C++
+      * Sought to replace C/C++
 
     * C++
       * Reaction to Simula, and BCPL
@@ -28,27 +28,28 @@
 * Unique features of the language
   * Does the language have any particularly unique features?
     * Java
-      * One of a few languages that runs on the Java Virtual Machine.
-      * Compiles to Java bytecode.
+      * One of a few languages that runs on the Java Virtual Machine and that compiles to Java bytecode.
       
     * C++
-      * [Resource acquisition is initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)
+      * Most features have been copied or done in a new way. C++ most unique feature is [Resource acquisition is initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)
       
 * Name spaces
   * How are name spaces implemented?
     * Java
       * Java packages
-        * directly mapped to file
+        * Creation: Directly mapped to a package directory.
+        * Use: ``` using <name_of_namespace>; ```
 
     * C++
-      * namespace <name_of_namespace> {  }
+      * Creation: ``` namespace <name_of_namespace> {  } ```
+      * Use: ``` using namespace <name_of_namespace>; ```
 
   * How are name spaces used?
     * Java
-      * Name spaces in java allow multiple classes to have the same name but also dictates the file location of the class.
+      * Name spaces are used to organize code as well as file/file-structure and to prevent name collisions.
       
     * C++
-      * Name spaces are used to allow multiple classes to have the same name by being in different name spaces.
+      * Name spaces are used to organize code into logical groups and to prevent name collisions.
       
 * Types
     * What types does the language support?
