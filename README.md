@@ -1,7 +1,7 @@
-### Comparison of C++ and Java
+## Comparison of C++ and Java
 #### Team Members: Wesley Thompson
 
-1. Language purpose/genesis
+### 1. Language purpose/genesis
   * Why was the language created?
     * Java
       * Needed an architecture-neutral language for developing on multiple different embedded electronics or on the World-Wide Web. [Source](http://www.oracle.com/technetwork/java/javase/overview/javahistory-index-198355.html)
@@ -25,7 +25,7 @@
       * Reaction to Simula, and BCPL
       * Sought to replace C
 
-2. Unique features of the language
+### 2. Unique features of the language
   * Does the language have any particularly unique features?
     * Java
       * One of a few languages that runs on the Java Virtual Machine and that compiles to Java bytecode.
@@ -33,7 +33,7 @@
     * C++
       * Most features have been copied or done in a new way. C++ most unique feature is [Resource acquisition is initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)
       
-3. Name spaces
+### 3. Name spaces
   * How are name spaces implemented?
     * Java
       * Java packages
@@ -51,7 +51,7 @@
     * C++
       * Name spaces are used to organize code into logical groups and to prevent name collisions.
       
-4. Types
+### 4. Types
     * What types does the language support?
       * Java
         * Byte
@@ -87,7 +87,7 @@
       * C++
         * Yes, through classes
         
-5. Classes
+### 5. Classes
   * Defining
     * Java
       * ``` class Something {} ```
@@ -137,7 +137,7 @@
                 //some de-initialization
             }
         ``` 
-6. Instance reference name in data type (class) this?  self?
+### 6. Instance reference name in data type (class) this?  self?
     * Java
       * ``` class Something {
                 string thing;
@@ -159,7 +159,7 @@
                 this->thing = "a thing";
             }
         ``` 
-7. Properties
+### 7. Properties
   * Getters and setters...write your own or built in?
     * Java
       * Write your own
@@ -175,7 +175,7 @@
       * N/a
     * C++
       * N/a
-8. Interfaces / protocols
+### 8. Interfaces / protocols
   * What does the language support?
     * Java
       * Interfaces
@@ -192,8 +192,8 @@
       * [Runnable](https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html) is a good example. Requires threaded object to implement the method run by implementing the interface Runnable
     * C++
       * N/a
-9. Inheritance / extension
-10. Reflection
+### 9. Inheritance / extension
+### 10. Reflection
   * What reflection abilities are supported?
     * Java
       * https://www.javatpoint.com/java-reflection
@@ -205,7 +205,7 @@
       * Accessing a classes members etc.
     * C++
       * N/a
-11. Memory management
+### 11. Memory management
   * How is it handled?
     * Java
       * Garbage Collector
@@ -226,14 +226,14 @@
       * No
     * C++
       * No
-12. Comparisons of references and values
+### 12. Comparisons of references and values
   * How are values compared? (i.e. comparing two strings)
     * Java
       * ` new String("test").equals("test") `
     * C++
       * ``` std::string string = "blah"
           if(string == "bleh") { . . . } ```
-13. Null/nil references
+### 13. Null/nil references
   * Which does the language use? (null/nil/etc)
     * Java
       * null
@@ -244,22 +244,22 @@
       * [null ignore invocation](http://blog.joda.org/2007/01/java-7-null-ignore-invocation_9576.html)
     * C++
       * Nope manually check
-14. Errors and exception handling
+### 14. Errors and exception handling
     * Java
       * try catch throw etc
     * C++
       * try catch throw etc
-15. Lambda expressions, closures, or functions as types
+### 15. Lambda expressions, closures, or functions as types
     * Java
       * 
     * C++
       * 
-16. Implementation of listeners and event handlers
+### 16. Implementation of listeners and event handlers
     * Java
       * 
     * C++
       * 
-17. Singleton
+### 17. Singleton
   * How is a singleton implemented?
     * Java
       * [implementation](http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples)
@@ -275,19 +275,19 @@
       * [Yes](http://www.javapractices.com/topic/TopicAction.do?Id=34)
     * C++
       * [Yep](https://www.devarticles.com/c/a/Cplusplus/C-plus-plus-In-Theory-The-Singleton-Pattern-Part-I/4/)
-18. Procedural programming
+### 18. Procedural programming
   * Does the language support procedural programming?
     * Java
       * Yes
     * C++
       * yes
-19. Functional programming
+### 19. Functional programming
   * Does the language support functional programming?
     * Java
       * [Yep](http://www.functionaljava.org/)
     * C++
       * [Yep](http://blog.madhukaraphatak.com/functional-programming-in-c++/)
-20. Multithreading
+### 20. Multithreading
   * Threads or thread-like abilities
     * Java
       * https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html
