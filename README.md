@@ -31,7 +31,7 @@
       * One of a few languages that runs on the Java Virtual Machine and that compiles to Java bytecode.
       
     * C++
-      * Most features have been copied or done in a new way. C++ most unique feature is [Resource acquisition is initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)
+      * Most features have been copied or done in a new way. C++ most unique feature is [Resource acquisition is initialization](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization).
       
 ### 3. Name spaces
   * How are name spaces implemented?
@@ -41,8 +41,8 @@
         * Use: ``` using <name_of_namespace>; ```
 
     * C++
-      * Creation: ``` namespace <name_of_namespace> {  } ```
-      * Use: ``` using namespace <name_of_namespace>; ```
+      * Creation: ` namespace <name_of_namespace> {  } `
+      * Use: ` using namespace <name_of_namespace>; `
 
   * How are name spaces used?
     * Java
@@ -54,44 +54,33 @@
 ### 4. Types
     * What types does the language support?
       * Java
-        * Byte
-        * Short
-        * Integer
-        * Long
-        * Float
-        * Double
-        * Boolean
-        * Character
-        * Enumeration
+        * Primitives: byte, short, int, long, float, double, boolean, and char
+        * Also has java.lang.String class as support for character strings.
 
       * C++
-        * Boolean
-        * Character
-        * Integer
-        * Float
-        * Double
-        * Wide Character
-        * Enumeration
+        * Primitives: bool, char, int, float, double, void, wchar_t
+        * Also has modifiers signed/unsigned and short/long which can be used as follows:
+          * unsigned char, signed char, unsigned int, signed int, short int, unsigned short int, signed short int, long int, signed long int, unsigned long int, long double.
 
     * Are both reference and value types supported?
       * Java
-        * Yes
+        * Supports reference and value types, but is strictly pass-by-value, pass-by-reference isn't supported.
         
       * C++
-        * Yes
+        * Supports both reference and value types.
         
     * Can new value types be created?
       * Java
-        * Yes, through classes
+        * New value types are created via classes.
         
       * C++
-        * Yes, through classes
+        * Yes, through classes.
         
 ### 5. Classes
   * Defining
     * Java
       * ``` class Something {} ```
-      * access modifiers to class are optional
+      * Access modifiers to class are optional
 
     * C++
       * ``` class Something {} ```
@@ -110,9 +99,7 @@
                 public Something() {
                     //some initialization
                 }
-            } 
-            
-        ``` 
+            } ``` 
     * C++
       * ``` class Something {
                 public:
@@ -121,8 +108,7 @@
             
             Something::Something() {
                 //some initialization
-            }
-        ``` 
+            }``` 
   * Destructing/de-initializing
     * Java
       * Destructing is handled automatically as part of the Garbage Collection.
@@ -135,8 +121,8 @@
             
             Something::~Something() {
                 //some de-initialization
-            }
-        ``` 
+            } ```
+        
 ### 6. Instance reference name in data type (class) this?  self?
     * Java
       * ``` class Something {
@@ -145,8 +131,7 @@
                     //some initialization
                     this.thing = "a thing";
                 }
-            } 
-        ```
+            } ```
     * C++
       * ``` class Something {
                 public:
@@ -157,8 +142,8 @@
             Something::Something() {
                 //some initialization
                 this->thing = "a thing";
-            }
-        ``` 
+            } ``` 
+            
 ### 7. Properties
   * Getters and setters...write your own or built in?
     * Java
@@ -189,20 +174,43 @@
       * N/a
   * How is it used?
     * Java
-      * [Runnable](https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html) is a good example. Requires threaded object to implement the method run by implementing the interface Runnable
+      * [Runnable](https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html) is a good example. Requires threaded object to implement the method run by implementing the interface Runnable.
     * C++
       * N/a
 ### 9. Inheritance / extension
+  * Java
+    * ```class Something {
+      public void doThing() {}
+    }  
+    
+    class SomethingElse extends Something {
+      public void doOtherThing() {}
+    }
+    
+    SomethingElse s = new SomethingElse();
+    s.doThing();```
+  * C++
+    * ```class Something {
+      public:
+        void doThing() {}
+    };
+    
+    class SomethingElse: public Something {
+        void doOtherThing() {}
+    };
+    
+    SomethingElse s;
+    s.doThing();```
+    
 ### 10. Reflection
   * What reflection abilities are supported?
     * Java
-      * https://www.javatpoint.com/java-reflection
+      * All typical reflection capabilities found via [java.lang.Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html)
     * C++
-      * Not supported
+      * Not officially supported, but solutions can and have been created.
   * How is reflection used?
     * Java
-      * Accessing what a class is etc.
-      * Accessing a classes members etc.
+      * Can be used to inspect classes at runtime to see their methods, constructors, properties, etc at runtime.
     * C++
       * N/a
 ### 11. Memory management
@@ -210,12 +218,12 @@
     * Java
       * Garbage Collector
     * C++
-      * Manually
+      * Manual memory management
   * How does it work?
     * Java
-      * Objects that pass out of reference are added to the garbage heap to be collected when a new object is created
+      * Objects that pass out of reference are added to the garbage heap to be collected when a new object is created. The memory reclaims the memory as needed.
     * C++
-      * Allocation and deallocation
+      *  Manual allocation and deallocation. Or variables/objects pass out of scope and are deleted.
   * Garbage collection?
     * Java
       * Yes
@@ -243,17 +251,39 @@
     * Java
       * [null ignore invocation](http://blog.joda.org/2007/01/java-7-null-ignore-invocation_9576.html)
     * C++
-      * Nope manually check
+      * Nope manually check using an if statement.
 ### 14. Errors and exception handling
-    * Java
-      * try catch throw etc
-    * C++
-      * try catch throw etc
+    * Java and C++ both use try-catch blocks to handle errors and exceptions.
 ### 15. Lambda expressions, closures, or functions as types
     * Java
-      * 
+      * Lambda expression: Create an anonymous  class that implements a functional interface
+      * [Good Example](https://www.javatpoint.com/java-lambda-expressions) 
+      ```interface Sayable{  
+         public String say();  
+         }  
+         public class LambdaExpressionExample{  
+         public static void main(String[] args) {  
+         Sayable s=()->{  
+             return "I have nothing to say.";  
+         };  
+         System.out.println(s.say());  
+         }  
+         }  ```
     * C++
-      * 
+      * Referred to as a lambda
+      * [Good Example](https://msdn.microsoft.com/en-us/library/dd293608.aspx)
+        * ```#include <algorithm>  
+             #include <cmath>  
+
+             void abssort(float* x, unsigned n) {  
+                 std::sort(x, x + n,  
+                     // Lambda expression begins  
+                     [](float a, float b) {  
+                         return (std::abs(a) < std::abs(b));  
+                     } // end of lambda expression  
+                 );  
+             }  ```
+  
 ### 16. Implementation of listeners and event handlers
     * Java
       * 
