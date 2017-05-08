@@ -42,7 +42,7 @@
 
     * C++
       * Creation: ` namespace <name_of_namespace> {  } `
-      * Use: ` using namespace <name_of_namespace>; `
+      * Use: ``` using namespace <name_of_namespace>; ```
 
   * How are name spaces used?
     * Java
@@ -52,7 +52,7 @@
       * Name spaces are used to organize code into logical groups and to prevent name collisions.
       
 ### 4. Types
-    * What types does the language support?
+  * What types does the language support?
       * Java
         * Primitives: byte, short, int, long, float, double, boolean, and char
         * Also has java.lang.String class as support for character strings.
@@ -124,7 +124,7 @@
             } ```
         
 ### 6. Instance reference name in data type (class) this?  self?
-    * Java
+   * Java
       * ``` class Something {
                 string thing;
                 public Something() {
@@ -203,37 +203,37 @@
     s.doThing();```
     
 ### 10. Reflection
-  * What reflection abilities are supported?
-    * Java
-      * All typical reflection capabilities found via [java.lang.Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html)
-    * C++
-      * Not officially supported, but solutions can and have been created.
-  * How is reflection used?
-    * Java
-      * Can be used to inspect classes at runtime to see their methods, constructors, properties, etc at runtime.
-    * C++
-      * N/a
+* What reflection abilities are supported?
+  * Java
+    * All typical reflection capabilities found via [java.lang.Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html)
+  * C++
+    * Not officially supported, but solutions can and have been created.
+* How is reflection used?
+  * Java
+    * Can be used to inspect classes at runtime to see their methods, constructors, properties, etc at runtime.
+  * C++
+    * N/a
 ### 11. Memory management
-  * How is it handled?
-    * Java
-      * Garbage Collector
-    * C++
-      * Manual memory management
-  * How does it work?
-    * Java
-      * Objects that pass out of reference are added to the garbage heap to be collected when a new object is created. The memory reclaims the memory as needed.
-    * C++
-      *  Manual allocation and deallocation. Or variables/objects pass out of scope and are deleted.
-  * Garbage collection?
-    * Java
-      * Yes
-    * C++
-      * No
-  * Automatic reference counting?
-    * Java
-      * No
-    * C++
-      * No
+* How is it handled?
+  * Java
+    * Garbage Collector
+  * C++
+    * Manual memory management
+* How does it work?
+  * Java
+    * Objects that pass out of reference are added to the garbage heap to be collected when a new object is created. The memory reclaims the memory as needed.
+  * C++
+    *  Manual allocation and deallocation. Or variables/objects pass out of scope and are deleted.
+* Garbage collection?
+  * Java
+    * Yes
+  * C++
+    * No
+* Automatic reference counting?
+  * Java
+    * No
+  * C++
+    * No
 ### 12. Comparisons of references and values
   * How are values compared? (i.e. comparing two strings)
     * Java
@@ -242,53 +242,50 @@
       * ``` std::string string = "blah"
           if(string == "bleh") { . . . } ```
 ### 13. Null/nil references
-  * Which does the language use? (null/nil/etc)
-    * Java
-      * null
-    * C++
-      * NULL
-  * Does the language have features for handling null/nil references?
-    * Java
-      * [null ignore invocation](http://blog.joda.org/2007/01/java-7-null-ignore-invocation_9576.html)
-    * C++
-      * Nope manually check using an if statement.
+* Which does the language use? (null/nil/etc)
+  * Java
+    * null
+  * C++
+    * NULL
+* Does the language have features for handling null/nil references?
+  * Java
+    * [null ignore invocation](http://blog.joda.org/2007/01/java-7-null-ignore-invocation_9576.html)
+  * C++
+    * Nope manually check using an if statement.
 ### 14. Errors and exception handling
-    * Java and C++ both use try-catch blocks to handle errors and exceptions.
+* Java and C++ both use try-catch blocks to handle errors and exceptions.
 ### 15. Lambda expressions, closures, or functions as types
-    * Java
-      * Lambda expression: Create an anonymous  class that implements a functional interface
-      * [Good Example](https://www.javatpoint.com/java-lambda-expressions) 
-      ```interface Sayable{  
-         public String say();  
-         }  
-         public class LambdaExpressionExample{  
-         public static void main(String[] args) {  
-         Sayable s=()->{  
-             return "I have nothing to say.";  
-         };  
-         System.out.println(s.say());  
-         }  
-         }  ```
-    * C++
-      * Referred to as a lambda
-      * [Good Example](https://msdn.microsoft.com/en-us/library/dd293608.aspx)
-        * ```#include <algorithm>  
-             #include <cmath>  
-
-             void abssort(float* x, unsigned n) {  
-                 std::sort(x, x + n,  
-                     // Lambda expression begins  
-                     [](float a, float b) {  
-                         return (std::abs(a) < std::abs(b));  
-                     } // end of lambda expression  
-                 );  
-             }  ```
+* Java
+  * Lambda expression: Create an anonymous  class that implements a functional interface
+  * [Good Example](https://www.javatpoint.com/java-lambda-expressions) 
+  ```interface Sayable{  
+     public String say();  
+     }  
+     public class LambdaExpressionExample{  
+     public static void main(String[] args) {  
+     Sayable s=()->{  
+         return "I have nothing to say.";  
+     };  
+     System.out.println(s.say());  
+     }  
+     }  ```
+* C++
+  * Referred to as a lambda
+  * [Good Example](https://msdn.microsoft.com/en-us/library/dd293608.aspx)
+  * ``` #include <algorithm>
+  #include <cmath>
+  void abssort(float* x, unsigned n) {
+    std::sort(x, x + n,
+    // Lambda expression begins
+    [](float a, float b) {
+    return (std::abs(a) < std::abs(b));
+    } // end of lambda expression );  } ```
   
 ### 16. Implementation of listeners and event handlers
-    * Java
-      * 
-    * C++
-      * 
+* Java
+  * 
+* C++
+  * 
 ### 17. Singleton
   * How is a singleton implemented?
     * Java
