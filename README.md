@@ -312,9 +312,9 @@ void abssort(float* x, unsigned n) {
   
 ### 16. Implementation of listeners and event handlers
 * Java
-  * 
+  * [Great example](http://programming.guide/java/create-a-custom-event.html)
 * C++
-  * 
+  * [Good example](http://www.dreamincode.net/forums/topic/197421-the-listener-pattern/)
 ### 17. Singleton
 * How is a singleton implemented?
   * Java
@@ -334,15 +334,15 @@ void abssort(float* x, unsigned n) {
 ### 18. Procedural programming
 * Does the language support procedural programming?
   * Java
-    * Yes
+    * Suprisingly debated. Most say no.
   * C++
-    * yes
+    * Yes, C++ is just a superset of C language.
 ### 19. Functional programming
 * Does the language support functional programming?
   * Java
-    * [Yep](http://www.functionaljava.org/)
+    * [Yes](http://www.functionaljava.org/)
   * C++
-    * [Yep](http://blog.madhukaraphatak.com/functional-programming-in-c++/)
+    * [Yes](http://blog.madhukaraphatak.com/functional-programming-in-c++/)
 ### 20. Multithreading
 * Threads or thread-like abilities
   * Java
@@ -350,7 +350,5 @@ void abssort(float* x, unsigned n) {
   * C++
     * http://www.cplusplus.com/reference/thread/thread/
 * How is multitasking accomplished?
-  * Java
-    * Don't understand the question
-  * C++
-    * Don't understand the question
+  * Both Java and C++ can do process-based multitasking or thread-based multitasking.
+ 
